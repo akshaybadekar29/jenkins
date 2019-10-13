@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    environment {
+        FirstName = 'Akshay'
+        LastName = 'Badekar'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "your name is $FirstName $LastName "'
+
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,9 @@
+#pull image from  docker hub
+$docker pull jenkins/jenkins
+#find the docker compose file 
+#create directory inside /opt/jenkins_home directory 
+#change permission if requred for directory 
+
+
+# run docker compose 
+docker-compose up -d 
