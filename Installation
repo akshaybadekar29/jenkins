@@ -7,3 +7,7 @@ $docker pull jenkins/jenkins
 
 # run docker compose 
 docker-compose up -d 
+
+docker run -it --rm  -v $PWD/java-app:/app -v /root/.m2:/root/.m2 -w /app maven:3-alpine sh 
+
+docker run --rm  -v $PWD/java-app:/app -v /root/.m2:/root/.m2 -w /app maven:3-alpine mvn package
